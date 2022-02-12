@@ -1,0 +1,57 @@
+.app-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    box-shadow: 2px 2px 18px 3px rgb(0 0 0 / 20%);
+    background: #fff;
+    z-index:1;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.nav-bar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-left .app-logo{
+    margin:0
+}
+.nav-bar-left a {
+    margin:10px
+}
+.nav-bar-right {
+    display: block;
+}
+.nav-bar-right ul{
+    list-style-type: none;
+}
+.nav-bar-right li{
+   float: left
+}
+ul[class="app-auth"]{
+    display: flex;
+}
+ul[class="app-auth"] li{
+    margin: 5px;
+}
+button.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eee;
+}

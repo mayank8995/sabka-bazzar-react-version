@@ -1,21 +1,29 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import { getProduct } from '../../redux/products/actionCreator'
 const Products = (props) => {
-
+    const {id} = useParams();
     const productList = useSelector((state) => state.getProductDetails.productList);
-    console.log(">>>>", productList)
+    const categoryList = useSelector((state) => state.getCategoryDetails.productList);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getProduct())
     }, [dispatch])
     return <React.Fragment>
-        <ul>
-            {productList.map((item, index) => {
-                return <li>{item.name}</li>
-            })}
-        </ul>
+        <div className='products'>
+        <div className='category'>
+
+        </div>
+        <div className='product-list'>
+            <ul>
+                {productList.map((item, index) => {
+                    return <li>{item.name}</li>
+                })}
+            </ul>
+        </div>
+        </div>
     </React.Fragment>
 
 

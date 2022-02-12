@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+ul,li,ol{
+  padding:0;
+  margin:0;
+}
+img{
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+input,
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  width:96%
+}
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #bf2957;
+}
+button{
+    background-color: #bf2957;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    padding: 8px;
+    transition: all 0.3s;
+    min-width: 80px;
+    color: #fff;
+    font-size: 14px;
+}
+a{
+  text-decoration: none;
 }

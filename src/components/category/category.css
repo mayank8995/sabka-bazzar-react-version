@@ -1,0 +1,20 @@
+.category{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px rgb(0 0 0 / 20%);
+    min-height: 205px;
+    margin: 40px 0px 0px;
+    padding: 10px 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.description{
+    flex-basis: 40%;
+}
+.navigate-btn{
+    background-color: #bf2957;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    color: #fff
+}

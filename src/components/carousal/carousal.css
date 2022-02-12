@@ -1,0 +1,14 @@
+.carousal{
+    position: relative;
+    box-shadow: 0 8px 6px -6px rgb(0 0 0 / 20%);
+}
+.btn-left{
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+.btn-right{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
