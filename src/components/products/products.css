@@ -67,6 +67,7 @@ h3{
           display: none;
       }
       .product-list{
+          
           flex-basis: 100%;
       }
   }
