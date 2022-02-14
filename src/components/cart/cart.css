@@ -1,0 +1,21 @@
+.cart{
+    border: 1px solid greenyellow;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    top: 18%;
+    right: 0;
+    width: 33%;
+    z-index: 1;
+    height: 80%;
+}
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+}
+span:nth-child(2){
+    cursor: pointer;
+}

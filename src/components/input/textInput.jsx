@@ -11,4 +11,4 @@ const TextInput = ({ register, type, name, placeholder, mandatory, errors, rules
     </React.Fragment>
 }
 
-export default TextInput;
+export default React.memo(TextInput);

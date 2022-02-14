@@ -56,4 +56,6 @@ button{
 a{
   text-decoration: none;
 }
-
+.selected{
+  background-color: #d3d0d0;
+}

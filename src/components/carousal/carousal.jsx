@@ -24,4 +24,4 @@ const Carousal = ({ banner }) => {
         <button className="btn-right" onClick={next}>Next</button>
     </div>
 }
-export default Carousal
+export default React.memo(Carousal)

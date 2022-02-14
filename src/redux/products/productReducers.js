@@ -1,4 +1,4 @@
-import { GET_PRODUCTS } from "../actionType";
+import {GET_PRODUCTS } from "../actionType";
 
 
 const productState = {

@@ -34,4 +34,4 @@ const Category = ({ categoryData }) => {
         })}
     </React.Fragment>
 }
-export default Category;
+export default React.memo(Category);

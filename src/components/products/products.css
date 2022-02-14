@@ -10,6 +10,10 @@
     flex-basis: 238px;
     border-right: 2px solid #eee;
     border-bottom: 2px dashed #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .products{
     display: flex;
