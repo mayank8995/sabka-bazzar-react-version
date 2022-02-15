@@ -7,7 +7,12 @@
     right: 0;
     width: 33%;
     z-index: 1;
-    height: 80%;
+}
+.cart-body{
+    display: flex;
+    height: 84%;
+    justify-content: center;
+    align-items: center;
 }
 .cart-header{
     display: flex;
@@ -18,4 +23,10 @@
 }
 span:nth-child(2){
     cursor: pointer;
+}
+.cart-footer > button {
+    width: 100%;
+}
+.no-item{
+    text-align: center
 }

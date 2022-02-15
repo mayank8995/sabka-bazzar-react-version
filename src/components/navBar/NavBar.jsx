@@ -1,11 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
 import ReactDOM from 'react-dom'
+import { useSelector } from 'react-redux';
 import { Link, NavLink } from 'react-router-dom';
 import Cart from '../cart/cart';
 import './NavBar.css'
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false)
+    const cartCount = useSelector((state) => state.getCartData.count)
+    console.log(" cartCount>>>>",cartCount)
     const openCart = () =>{
         setIsOpen(true)
         const body = document.querySelector("body");
@@ -40,7 +43,7 @@ const NavBar = (props) => {
                 </ul>
                 <button className='cart-container' onClick={openCart}>
                     <img alt="add to cart" src="static/images/cart.svg" style={{ width: '30px' }}/>
-                    <span>0 items</span>
+                    <span>{cartCount} items</span>
                 </button>
             </div>
            {isOpen && ReactDOM.createPortal(<Cart close={closeCart} />, document.getElementById('modal'))}
