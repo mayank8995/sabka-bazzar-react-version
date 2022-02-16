@@ -1,7 +1,6 @@
 import React from 'react';
 
 const TextInput = ({ register, type, name, placeholder, mandatory, errors, rules }) => {
-    console.log("erros>>>", errors)
     return <React.Fragment>
         <label htmlFor={name}>
             {name}

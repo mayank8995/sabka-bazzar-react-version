@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItemToCart, removeItemFromCart } from '../../redux/cart/actionCreator';
 import './cart.css'
@@ -9,7 +8,6 @@ const Cart = (props) => {
         return acc + curr.price * curr.count
     },0)
     const dispatch = useDispatch()
-    console.log("cartData>>>>",cartData)
     const increaseCount = (data) =>{
         dispatch(addItemToCart(data))
     }

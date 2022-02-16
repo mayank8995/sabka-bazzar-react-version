@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './category.css'
 const Category = ({ categoryData }) => {
-    const history = useHistory();
-    console.log("history>>>>", history)
     return <React.Fragment>
         {categoryData && categoryData?.data?.map((item, index) => {
             if (index % 2 === 0) {

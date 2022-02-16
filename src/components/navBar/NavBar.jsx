@@ -8,7 +8,6 @@ import './NavBar.css'
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false)
     const cartData = useSelector((state) => state.getCartData.items)
-    // console.log(" cartCount>>>>",cartCount)
     const openCart = () =>{
         setIsOpen(true)
         const body = document.querySelector("body");

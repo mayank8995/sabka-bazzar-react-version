@@ -11,8 +11,6 @@ const Login = (props) => {
     const history = useHistory()
     let authentication = false;
     const onSubmit = data => {
-
-        console.log(data, "  ", signUpDetails)
         if(data['Email'] === signUpDetails[0]['Email'] && data['Password'] === signUpDetails[0]['Password']){
             history.push('/home')
             authentication = true
@@ -20,8 +18,6 @@ const Login = (props) => {
         if(!authentication){
            alert('Please Sign up before login')
         }
-
-
     }
     return <React.Fragment>
         <div className='login'>
