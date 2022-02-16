@@ -7,8 +7,8 @@ import Cart from '../cart/cart';
 import './NavBar.css'
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false)
-    const cartCount = useSelector((state) => state.getCartData.count)
-    console.log(" cartCount>>>>",cartCount)
+    const cartData = useSelector((state) => state.getCartData.items)
+    // console.log(" cartCount>>>>",cartCount)
     const openCart = () =>{
         setIsOpen(true)
         const body = document.querySelector("body");
@@ -38,12 +38,12 @@ const NavBar = (props) => {
             </div>
             <div className='nav-bar-right'>
                 <ul className="app-auth">
-                    <li><NavLink to='/login'>Login</NavLink></li>
+                    <li><NavLink to='/'>Login</NavLink></li>
                     <li><NavLink to='/signup'>Signup</NavLink></li>
                 </ul>
                 <button className='cart-container' onClick={openCart}>
                     <img alt="add to cart" src="static/images/cart.svg" style={{ width: '30px' }}/>
-                    <span>{cartCount} items</span>
+                    <span>{cartData.length} items</span>
                 </button>
             </div>
            {isOpen && ReactDOM.createPortal(<Cart close={closeCart} />, document.getElementById('modal'))}

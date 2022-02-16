@@ -1,7 +1,6 @@
-import { ADD_TO_CART } from "../actionType";
+import { ADD_TO_CART, REMOVE_ITEM_FROM_CART } from "../actionType";
 
 const cartState = {
-    count:0,
     items:[]
 }
 const cartReducer = (state = cartState, action) => {
@@ -10,8 +9,12 @@ const cartReducer = (state = cartState, action) => {
         case ADD_TO_CART:
             return {
                 ...state,
-                count: state.items.length +1,
-                items: [...state.items,...action.payload]
+                items: action.payload
+            }
+        case REMOVE_ITEM_FROM_CART:
+            return{
+                ...state,
+                items: action.payload
             }
         default:
             return state

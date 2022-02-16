@@ -19,7 +19,8 @@
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^5.3.0",
     "redux": "^4.1.2",
-    "redux-devtools-extension": "^2.13.9"
+    "redux-devtools-extension": "^2.13.9",
+    "json-server": "^0.16.3"
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"npm run server\"",

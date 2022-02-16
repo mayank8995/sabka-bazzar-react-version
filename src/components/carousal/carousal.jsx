@@ -16,12 +16,12 @@ const Carousal = ({ banner }) => {
         current === 0 ? setCurrentData(initialData.length - 1) : setCurrentData(current => current - 1)
     }
     const carousal = dataToShow && dataToShow.map((item) => {
-        return <div key={item.id}><img src={item.bannerImageUrl} alt={item.bannerImageAlt} key={item.id} /></div>
+        return <div key={item.id}><img height="250" style={{width:'100%'}} src={item.bannerImageUrl} alt={item.bannerImageAlt} key={item.id} /></div>
     })
     return <div className='carousal'>
         {carousal}
-        <button className="btn-left" onClick={prev}>Previous</button>
-        <button className="btn-right" onClick={next}>Next</button>
+        <a href="#" onClick={()=>prev()} className="previous round">&#8249;</a>
+        <a href="#"  onClick={()=>next()} className="next round">&#8250;</a>
     </div>
 }
 export default React.memo(Carousal)
