@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import './style.css'
 import { emailValidation, password } from '../util/common';
 import { useHistory } from 'react-router-dom';
-const Login = (props) => {
+const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const signUpDetails = useSelector((state) => state.getAuthenticationDetails.signUp)
     const history = useHistory()

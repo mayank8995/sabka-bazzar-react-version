@@ -1,12 +1,12 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { signUp } from '../../redux/authentication/actionCreator';
 import TextInput from '../input/textInput';
 import { emailValidation, firstName, lastName, password } from '../util/common';
 import './style.css'
-const Signup = (props) => {
+const Signup = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const dispatch = useDispatch()
     const history = useHistory()

@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { Link, NavLink } from 'react-router-dom';
 import Cart from '../cart/cart';
 import './NavBar.css'
-const NavBar = (props) => {
+const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const cartData = useSelector((state) => state.getCartData.items)
     const openCart = () =>{

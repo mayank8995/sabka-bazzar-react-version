@@ -4,7 +4,7 @@ import { getBanner } from '../../redux/banners/actionCreator';
 import { getCategory } from '../../redux/category/actionCreator';
 const Carousal = React.lazy(()=>import('../carousal/carousal'))
 const Category = React.lazy(()=>import('../category/category'))
-const Home = (props) => {
+const Home = () => {
     const banner = useSelector((state) => state.getBannerDetails.bannerList)
     const categoryData = useSelector((state) => state.getCategoryDetails.categoryList);
     const dispatchBanner = useDispatch()
