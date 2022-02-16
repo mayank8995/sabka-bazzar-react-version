@@ -23,7 +23,7 @@
     "json-server": "^0.16.3"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"npm run server\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

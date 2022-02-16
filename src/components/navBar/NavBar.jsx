@@ -17,7 +17,7 @@ const NavBar = (props) => {
     const closeCart = () =>{
         setIsOpen(false)
         const body = document.querySelector("body");
-        body.style.overflow = 'auto'
+        body.style.overflowX = 'hidden'
     }
     return <header className='app-header'>
         <nav className='nav-bar'>

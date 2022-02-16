@@ -2,11 +2,11 @@
     background-color: #fff;
     position: fixed;
     bottom: 0;
-    top:18%;
-    right: 0;
-    width: 33%;
+    top: 18%;
+    right: 1%;
+    width: 28%;
     z-index: 1;
-    max-height: 80%;
+    max-height: 82%;
     font-size: 12px;
 }
 .cart-body{
