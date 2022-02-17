@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItemToCart } from '../../redux/cart/actionCreator';
 import { getProduct } from '../../redux/products/actionCreator';
+import LazyLoader from '../LazyLoadImage/LazyLoader';
 
 const ProductDetails = ({ id }) => {
     
@@ -26,7 +27,7 @@ const ProductDetails = ({ id }) => {
         {(id ? filteredProduct : productList).map((item, index) => {
             return <div key={item.id} className='card'>
                 <h3 className='category-name'>{item.name}</h3>
-                <img width="115" height="115" src={item.imageURL} alt={item.name} />
+                <LazyLoader src={item.imageURL} threshold={[0, 0.5, 1]} alt={item.name} width="115" height="115"/>
                 <p className='category-description'>{item.description}</p>
                 <div className='add-category'><span>MRP Rs. {item.price}</span>&nbsp;<button onClick={add.bind(null,item)}>Buy Now</button></div>
             </div>
